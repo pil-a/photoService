@@ -1,0 +1,6 @@
+# Dependency directories
+node_modules
+
+# bundle
+client/scripts/bundle.*
+client/styles/site.css
