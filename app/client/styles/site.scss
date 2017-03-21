@@ -1,18 +1,33 @@
-html, body {
+html, body, p {
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: green;
   text-align: center;
   padding: 10px;
-  color: white;
+  border-bottom: black 1px solid;
+
+  span {
+    cursor: pointer;
+    margin: 0 5px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 footer {
   border-top: black 1px solid;
   text-align: center;
+  p {
+    margin-top: 10px;
+    a {
+      &:visited {
+        color: #6f6f6f;
+      }
+    }
+  }
 }
 
 main {
