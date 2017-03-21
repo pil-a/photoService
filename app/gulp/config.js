@@ -6,7 +6,7 @@ module.exports = {
         stylesOut: './client/styles/',
 
         entryScript: './client/scripts/app.js',
-        scripts: './client/scripts/components/*.js',
+        scripts: ['./client/scripts/components/*.js', './client/scripts/manager/*.js'],
 
         bundle: './client/scripts/bundle.js'
     }

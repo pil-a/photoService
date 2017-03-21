@@ -4,9 +4,9 @@ html, body, p {
 }
 
 header {
-  text-align: center;
-  padding: 10px;
   border-bottom: black 1px solid;
+  padding: 10px;
+  text-align: center;
 
   span {
     cursor: pointer;
@@ -32,4 +32,27 @@ footer {
 
 main {
   margin: 10px;
+}
+
+.about-container {
+  margin: 1px 25em;
+
+  > div {
+    display: inline-block;
+    margin: 0 25px;
+
+    &:first-child {
+      text-align: center;
+    }
+    &:last-child {
+      vertical-align: top;
+    }
+  }
+
+  img {
+    border: 1px black solid;
+    display: block;
+    height: 20em;
+    width: 15em;
+  }
 }

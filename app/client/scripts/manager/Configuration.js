@@ -1,6 +1,7 @@
 
-let Configuration = {
-  photoUrl: 'str'
+const Configuration = {
+  photoSourceUrl: 'str',
+  aboutPhoto: ''
 };
 
 const PageType = {
