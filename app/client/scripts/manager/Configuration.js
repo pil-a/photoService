@@ -1,6 +1,11 @@
 
 let Configuration = {
   photoUrl: 'str'
-}
+};
 
-export default Configuration;
+const PageType = {
+  gallery: 0,
+  about: 1
+};
+
+export {Configuration, PageType};
