@@ -1,13 +1,11 @@
-var path = require('path');
-
 module.exports = {
-    path: {
-        styles: './client/styles/*.scss',
-        stylesOut: './client/styles/',
+	path: {
+		styles: './client/styles/*.scss',
+		stylesOut: './client/styles/',
 
-        entryScript: './client/scripts/app.js',
-        scripts: ['./client/scripts/components/*.js', './client/scripts/manager/*.js'],
+		entryScript: './client/scripts/app.jsx',
+		scripts: ['./client/scripts/components/*.jsx', './client/scripts/manager/*.js'],
 
-        bundle: './client/scripts/bundle.js'
-    }
-}
+		bundle: './client/scripts/bundle.js'
+	}
+};

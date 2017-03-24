@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules
 
+# linter
+.eslintrc*
+
 # bundle
 client/scripts/bundle.*
 client/styles/site.css
