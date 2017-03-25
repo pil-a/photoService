@@ -2,5 +2,5 @@
 node_modules
 
 # bundle
-client/scripts/bundle.*
-client/styles/site.css
+src/scripts/bundle.*
+src/styles/site.css

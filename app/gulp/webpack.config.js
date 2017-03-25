@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-var config = require('./config');
-var WebpackNotifierPlugin = require('webpack-notifier');
+var config = require('./config'),
+	WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
 	devtool: 'inline-source-map',
@@ -16,11 +16,16 @@ module.exports = {
 	module: {
 		loaders: [{
 			test: /\.(js|jsx)$/,
-			loaders: ['babel-loader?presets[]=react,presets[]=es2015,plugins[]=transform-es2015-classes,plugins[]=transform-react-jsx'],
-			exclude: /(node_modules)/,
+			loaders: [
+				'babel-loader?presets[]=react,'
+				+ 'presets[]=es2015,'
+				+ 'plugins[]=transform-es2015-classes,'
+				+ 'plugins[]=transform-react-jsx'
+			],
+			exclude: /(node_modules)/
 		}]
 	},
 	plugins: [
-		new WebpackNotifierPlugin(),
+		new WebpackNotifierPlugin()
 	]
 };

@@ -1,11 +1,16 @@
+const sourcePath = './src';
+
 module.exports = {
 	path: {
-		styles: './client/styles/*.scss',
-		stylesOut: './client/styles/',
+		styles: sourcePath + '/styles/*.scss',
+		stylesOut: sourcePath + '/styles/',
 
-		entryScript: './client/scripts/app.jsx',
-		scripts: ['./client/scripts/components/*.jsx', './client/scripts/manager/*.js'],
+		entryScript: sourcePath + '/scripts/app.jsx',
+		scripts: [
+			sourcePath + '/scripts/components/*.jsx',
+			sourcePath + '/scripts/manager/*.js'
+		],
 
-		bundle: './client/scripts/bundle.js'
+		bundle: sourcePath + '/scripts/bundle.js'
 	}
 };
