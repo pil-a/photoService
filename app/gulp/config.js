@@ -1,9 +1,9 @@
 const sourcePath = './src';
+const bundlePath = './public/build';
 
 module.exports = {
 	path: {
 		styles: sourcePath + '/styles/*.scss',
-		stylesOut: sourcePath + '/styles/',
 
 		entryScript: sourcePath + '/scripts/app.jsx',
 		scripts: [
@@ -11,6 +11,7 @@ module.exports = {
 			sourcePath + '/scripts/manager/*.js'
 		],
 
-		bundle: sourcePath + '/scripts/bundle.js'
+		bundleCss: bundlePath + '/',
+		bundleJs: bundlePath + '/bundle.js'
 	}
 };

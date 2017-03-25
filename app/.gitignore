@@ -2,5 +2,4 @@
 node_modules
 
 # bundle
-src/scripts/bundle.*
-src/styles/site.css
+src/public/build

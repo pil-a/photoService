@@ -1,0 +1,60 @@
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: black 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+header span {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+header span:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: black 1px solid;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer p a:visited {
+  color: #6f6f6f;
+}
+
+main {
+  margin: 10px;
+}
+
+.about-container {
+  margin: 1px 25em;
+}
+
+.about-container > div {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.about-container > div:first-child {
+  text-align: center;
+}
+
+.about-container > div:last-child {
+  vertical-align: top;
+}
+
+.about-container img {
+  border: 1px black solid;
+  display: block;
+  height: 20em;
+  width: 15em;
+}

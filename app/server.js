@@ -8,7 +8,7 @@ const port = nconf.get('general').port;
 
 const app = express()
 	.use(express.static(path.join(__dirname, 'views')))
-	.use(express.static(path.join(__dirname, 'src')))
+	.use(express.static(path.join(__dirname, 'public')))
 	.get('/', (req, res) => {
 		res.sendFile('index.html');
 	})

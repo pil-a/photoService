@@ -1,7 +1,7 @@
-﻿var gulp = require('gulp');
-var gutil = require('gulp-util');
+﻿var gulp = require('gulp'),
+	gutil = require('gulp-util');
 
-var env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'development';
 global.isDev = env !== 'production';
 
 

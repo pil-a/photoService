@@ -7,5 +7,5 @@ gulp.task('styles', function () {
 	var sassStyle = global.isDev ? 'expanded' : 'compressed';
 	gulp.src(config.path.styles)
 		.pipe(sass({ outputStyle: sassStyle }).on('error', gutil.log))
-		.pipe(gulp.dest(config.path.stylesOut));
+		.pipe(gulp.dest(config.path.bundleCss));
 });

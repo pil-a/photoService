@@ -7,7 +7,7 @@ module.exports = {
 	devtool: 'inline-source-map',
 	entry : config.path.entryScript,
 	output: {
-		filename: config.path.bundle
+		filename: config.path.bundleJs
 	},
 	resolve: {
 		extensions: ['', '.js', '.jsx'],
