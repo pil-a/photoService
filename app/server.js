@@ -4,7 +4,7 @@ var express = require('express'),
 	http = require('http');
 
 nconf.file({ file: path.join(__dirname, 'config.json') });
-const	port = nconf.get('general').port;
+const port = nconf.get('general').port;
 
 const app = express()
 	.use(express.static(path.join(__dirname, 'views')))
