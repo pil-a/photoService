@@ -1,5 +1,5 @@
 {
-  "general": {
-    "port": 5050
-  }
+    "general": {
+        "port": 5050
+    }
 }

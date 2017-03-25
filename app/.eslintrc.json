@@ -1,141 +1,161 @@
 {
-		"env": {
-				"browser": true,
-				"commonjs": true,
-				"es6": true,
-				"node": true
-		},
-		"globals": {
-				"React": true
-		},
-		"extends": [
-				"eslint:recommended",
-				"plugin:react/recommended"
-		],
-		"parserOptions": {
-				"ecmaFeatures": {
-						"experimentalObjectRestSpread": true,
-						"jsx": true
-				},
-				"sourceType": "module"
-		},
-		"plugins": [
-				"react"
-		],
-		"rules": {
-				"arrow-spacing": "error",
-				"brace-style": "error",
-				"curly": "error",
-				"default-case": "error",
-				"eqeqeq": "error",
-				"guard-for-in": "error",
-				"no-alert": "error",
-				"no-catch-shadow": "error",
-				"no-else-return": "error",
-				"no-multiple-empty-lines": "error",
-				"no-template-curly-in-string": "error",
-				"no-throw-literal": "error",
-				"no-trailing-spaces": "error",
-				"no-unneeded-ternary": "error",
-				"no-useless-concat": "error",
-				"no-whitespace-before-property": "error",
-				"object-property-newline": "error",
-				"prefer-const": "error",
-				"require-await": "error",
-				"semi-spacing": "error",
-				"space-before-blocks": "error",
-				"space-infix-ops": "error",
-				"space-unary-ops": "error",
-				"template-curly-spacing": "error",
-				"comma-dangle": [
-					"error",
-					"never"
-				],
-				"comma-spacing": [
-					"error",
-					{ "before": false, "after": true }
-				],
-				"comma-style": [
-					"error",
-					"last"
-				],
-				"dot-location": [
-					"error",
-					"property"
-				],
-				"dot-notation": [
-					"error",
-					{ "allowKeywords": true }
-				],
-				"func-call-spacing": [
-					"error",
-					"never"
-				],
-				"keyword-spacing": [
-					"error",
-					{ "before": true }
-				],
-				"linebreak-style": [
-						"error",
-						"windows"
-				],
-				"max-len": [
-					"error",
-					80,
-					{ "ignoreUrls": true }
-				],
-				"max-params": [
-					"error", 4
-				],
-				"newline-per-chained-call": [
-					"error",
-					{ "ignoreChainWithDepth": 2 }
-				],
-				"no-duplicate-imports": [
-					"error",
-					{ "includeExports": true }
-				],
-				"no-magic-numbers":[
-					"error",
-					{ "ignore": [1] }
-				],
-				"no-confusing-arrow": [
-					"error",
-					{"allowParens": true}
-				],
-				"no-console": [
-					"error", {
-						"allow":
-						["log", "error"]
-					}
-				],
-				"one-var": [
-					"error",
-					{ "var": "always", "let": "always", "const": "never" }
-				],
-				"operator-assignment": [
-					"error",
-					"always"
-				],
-				"operator-linebreak": [
-					"error",
-					"before"
-				],
-				"quotes": [
-						"warn",
-						"single"
-				],
-				"quote-props": [
-					"error",
-					"consistent-as-needed"
-				],
-				"semi": [
-						"error",
-						"always"
-				],
-				"space-in-parens": [
-					"error",
-					"never"
-				]
-		}
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "React": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "arrow-spacing": "error",
+        "brace-style": "error",
+        "curly": "error",
+        "default-case": "error",
+        "eqeqeq": "error",
+        "guard-for-in": "error",
+        "no-alert": "error",
+        "no-catch-shadow": "error",
+        "no-else-return": "error",
+        "no-multiple-empty-lines": "error",
+        "no-template-curly-in-string": "error",
+        "no-throw-literal": "error",
+        "no-trailing-spaces": "error",
+        "no-unneeded-ternary": "error",
+        "no-useless-concat": "error",
+        "no-whitespace-before-property": "error",
+        "object-property-newline": "error",
+        "prefer-const": "error",
+        "require-await": "error",
+        "semi-spacing": "error",
+        "space-before-blocks": "error",
+        "space-infix-ops": "error",
+        "space-unary-ops": "error",
+        "template-curly-spacing": "error",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "dot-notation": [
+            "error",
+            {
+                "allowKeywords": true
+            }
+        ],
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "max-len": [
+            "error",
+            80,
+            {
+                "ignoreUrls": true
+            }
+        ],
+        "max-params": [
+            "error", 4
+        ],
+        "newline-per-chained-call": [
+            "error",
+            {
+                "ignoreChainWithDepth": 2
+            }
+        ],
+        "no-duplicate-imports": [
+            "error",
+            {
+                "includeExports": true
+            }
+        ],
+        "no-magic-numbers": [
+            "error",
+            {
+                "ignore": [1]
+            }
+        ],
+        "no-confusing-arrow": [
+            "error",
+            {
+                "allowParens": true
+            }
+        ],
+        "no-console": [
+            "error", {
+                "allow": ["log", "error"]
+            }
+        ],
+        "one-var": [
+            "error",
+            {
+                "var": "always",
+                "let": "always",
+                "const": "never"
+            }
+        ],
+        "operator-assignment": [
+            "error",
+            "always"
+        ],
+        "operator-linebreak": [
+            "error",
+            "before"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "quote-props": [
+            "error",
+            "consistent-as-needed"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ]
+    }
 }
