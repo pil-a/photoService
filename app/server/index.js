@@ -1,8 +1,10 @@
-var path = require('path');
-var nconf = require('nconf');
+var express = require('express'),
+	path = require('path'),
+	nconf = require('nconf'),
+	http = require('http');
+
 nconf.file({ file: path.join(__dirname, 'config.json') });
 
-var express = require('express');
 var app = express();
 
 app.use(express.static(path.join(__dirname, '..', 'client')));
@@ -16,7 +18,6 @@ app.get('*', function(req, res) {
 });
 
 var port = nconf.get('general').port;
-var http = require('http');
 var server = http.createServer(app).listen(port, function() {
 	console.log('App is started at PORT ' + port);
 });
