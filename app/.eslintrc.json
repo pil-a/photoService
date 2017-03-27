@@ -40,7 +40,6 @@
         "no-useless-concat": "error",
         "no-whitespace-before-property": "error",
         "object-property-newline": "error",
-        "prefer-const": "error",
         "require-await": "error",
         "semi-spacing": "error",
         "space-before-blocks": "error",
@@ -111,7 +110,7 @@
         "no-magic-numbers": [
             "error",
             {
-                "ignore": [1]
+                "ignore": [0, 1]
             }
         ],
         "no-confusing-arrow": [
@@ -139,7 +138,8 @@
         ],
         "operator-linebreak": [
             "error",
-            "before"
+            "before",
+            { "overrides": { "+": "ignore", "&&": "ignore" } }
         ],
         "quotes": [
             "warn",
