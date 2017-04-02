@@ -23,8 +23,9 @@ export default class Index extends React.Component {
 		return (
 			<div>
 				<Header onMenuClick={this.redirectToPage} />
-				<Body currentPage={this.state.page}/>
+				<Body currentPage={this.state.page} />
 				<Footer />
-			</div>);
+			</div>
+		);
 	}
 }

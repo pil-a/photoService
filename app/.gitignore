@@ -6,3 +6,6 @@ public/build
 
 # VS Code files
 .vscode
+
+# config files
+config.json
