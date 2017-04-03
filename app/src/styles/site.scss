@@ -1,78 +1,81 @@
 html,
 body,
 p {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-	border-bottom: black 1px solid;
-	padding: 10px;
-	text-align: center;
-	span {
-		cursor: pointer;
-		margin: 0 5px;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    border-bottom: black 1px solid;
+    padding: 10px;
+    text-align: center;
+    span {
+        cursor: pointer;
+        margin: 0 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 footer {
-	border-top: black 1px solid;
-	text-align: center;
-	p {
-		margin-top: 10px;
-		a {
-			&:visited {
-				color: #6f6f6f;
-			}
-		}
-	}
+    border-top: black 1px solid;
+    text-align: center;
+    p {
+        margin-top: 10px;
+        a {
+            &:visited {
+                color: #6f6f6f;
+            }
+        }
+    }
 }
 
 main {
-	margin: 10px;
-	.preview-logo {
-		height: 100px;
-		width: 150px;
-	}
-	.content {
-		text-align: center;
-	}
-	.waiting {
-		display: inline-block;
-		border: 10px solid #f3f3f3;
-		border-top: 10px solid #3498db;
-		border-radius: 50%;
-		width: 25px;
-		height: 25px;
-		animation: spin 2s linear infinite;
-	}
-	
+    margin: 10px;
+    .preview-logo {
+        height: 100px;
+        width: 150px;
+    }
+    .content {
+        text-align: center;
+    }
+    .waiting {
+        display: inline-block;
+        border: 10px solid #f3f3f3;
+        border-top: 10px solid #3498db;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        animation: spin 2s linear infinite;
+    }
 }
 
 @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .about-container {
-	margin: 1px 25em;
-	>div {
-		display: inline-block;
-		margin: 0 25px;
-		&:first-child {
-			text-align: center;
-		}
-		&:last-child {
-			vertical-align: top;
-		}
-	}
-	img {
-		border: 1px black solid;
-		display: block;
-		height: 20em;
-		width: 15em;
-	}
+    margin: 1px 25em;
+    >div {
+        display: inline-block;
+        margin: 0 25px;
+        &:first-child {
+            text-align: center;
+        }
+        &:last-child {
+            vertical-align: top;
+        }
+    }
+    img {
+        border: 1px black solid;
+        display: block;
+        height: 20em;
+        width: 15em;
+    }
 }
