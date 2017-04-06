@@ -19,7 +19,7 @@ const app = express()
         res.sendFile('index.html');
     })
     .get('/design', (req, res) => {
-        getDropboxFiles(general.token, general.fileFolder)
+        getDropboxFiles(general)
             .then(urls => {
                 res.send(urls);
             })
