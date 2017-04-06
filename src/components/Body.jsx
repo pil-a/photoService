@@ -8,6 +8,12 @@ export default class Body extends React.Component {
         super(props);
     }
 
+    static get propTypes() {
+        return {
+            currentPage: React.PropTypes.number
+        };
+    }
+
     render() {
         var page;
         switch (this.props.currentPage) {

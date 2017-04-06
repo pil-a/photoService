@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Body from './Body';
-import { PageType } from '../service/Configuration';
+import { PageType, Links } from '../service/Configuration';
 
 export default class Initial extends React.Component {
     constructor() {
@@ -24,7 +24,7 @@ export default class Initial extends React.Component {
             <div>
                 <Header onMenuClick={this.handleRedirectToPage} />
                 <Body currentPage={this.state.page} />
-                <Footer />
+                <Footer author={Links.authorLink} creator={Links.creatorLink} />
             </div>
         );
     }

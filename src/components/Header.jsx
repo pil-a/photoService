@@ -8,6 +8,12 @@ export default class Header extends React.Component {
         this.handleToAbout = this.handleToAbout.bind(this);
     }
 
+    static get propTypes() {
+        return {
+            onMenuClick: React.PropTypes.func
+        };
+    }
+
     handleToGallery() {
         this.props.onMenuClick(PageType.gallery);
     }
