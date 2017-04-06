@@ -5,7 +5,7 @@ module.exports = {
     path: {
         styles: sourcePath + '/styles/*.scss',
 
-        entryScript: sourcePath + '/app/app.jsx',
+        entryScript: sourcePath + '/components/app.jsx',
         scripts: [
             sourcePath + '/components/*.jsx',
             sourcePath + '/manager/*.js'
