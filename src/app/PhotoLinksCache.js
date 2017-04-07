@@ -1,4 +1,4 @@
-let SessionObj = function SessionObj() {
+let PhotoLinksCacheObj = function PhotoLinksCacheObj() {
     let links = [],
         date = null;
 
@@ -18,4 +18,4 @@ let SessionObj = function SessionObj() {
     };
 };
 
-module.exports = new SessionObj();
+module.exports = new PhotoLinksCacheObj();

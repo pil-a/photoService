@@ -1,11 +1,11 @@
 var Dropbox = require('dropbox'),
     TinyURL = require('tinyurl'),
-    SessionObj = require('./Session'),
+    CacheObj = require('./PhotoLinksCache'),
     dbx;
 
 let getDropboxFiles = (general) => {
-    if (SessionObj.any(general.tempLinkExpireHours)) {
-        return Promise.resolve(SessionObj.getLinks());
+    if (CacheObj.any(general.tempLinkExpireHours)) {
+        return Promise.resolve(CacheObj.getLinks());
     }
     dbx = new Dropbox({ accessToken: general.token });
     return dbx.filesListFolder({ path: general.fileFolder })
@@ -48,7 +48,7 @@ function minifyLinks(filesData) {
 }
 
 function sortLinks(urls) {
-    SessionObj.fill(urls.sort((a, b) => {
+    CacheObj.fill(urls.sort((a, b) => {
         if (a.title < b.title) {
             return -1;
         } else if (a.title > b.title) {
@@ -56,7 +56,7 @@ function sortLinks(urls) {
         }
         return 0;
     }));
-    return SessionObj.getLinks();
+    return CacheObj.getLinks();
 }
 
 module.exports = getDropboxFiles;
